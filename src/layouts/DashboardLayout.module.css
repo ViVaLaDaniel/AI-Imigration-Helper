@@ -1,0 +1,24 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-bg-light);
+}
+
+.main {
+  flex: 1;
+  margin-left: 260px; /* Sidebar width */
+  padding: 2rem;
+  min-height: 100vh;
+  padding-bottom: 100px; /* Space for mobile tab bar if visible */
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+    padding: 1rem;
+    padding-bottom: 100px;
+  }
+  
+  /* Hide Sidebar on mobile via global CSS or here if Sidebar supports a className prop for hiding */
+  /* Since Sidebar is fixed, we might need to hide it in Sidebar.module.css with a media query */
+}

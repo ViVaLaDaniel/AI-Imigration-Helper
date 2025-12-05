@@ -1,0 +1,92 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #111827; /* Darker background for admin */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FCD34D; /* Gold accent for admin */
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  background: rgba(252, 211, 77, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FCD34D;
+}
+
+.nav {
+  flex: 1;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-md);
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.active {
+  color: #111827;
+  background: #FCD34D; /* Gold active state */
+}
+
+.active:hover {
+  background: #FBBF24;
+}
+
+.footer {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+
+.logoutBtn:hover {
+  color: var(--color-error);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

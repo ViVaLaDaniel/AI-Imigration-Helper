@@ -1,0 +1,354 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.backBtn {
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--color-text-secondary);
+  transition: background 0.2s;
+}
+
+.backBtn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--color-text-main);
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.docBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: var(--text-dark);
+  border: 1px solid #E5E7EB;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Confidence Score Banner */
+.confidenceCard {
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  border: none;
+}
+
+.confidenceContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+}
+
+.confidenceLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.confidenceLabel {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.confidenceValue {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.confidenceBar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.confidenceProgress {
+  height: 100%;
+  background: white;
+  border-radius: 999px;
+  transition: width 1s ease-out;
+}
+
+.confidenceRight {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Preview Column */
+.previewCard {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.previewHeader {
+  padding: 1rem;
+  background: #F9FAFB;
+  border-bottom: 1px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.previewContent {
+  flex: 1;
+  background: #525659;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdfPlaceholder {
+  color: white;
+  opacity: 0.5;
+}
+
+/* Analysis Column */
+.analysisCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sideCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+.summaryText {
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.summaryText strong {
+  color: var(--color-success);
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.checkbox {
+  margin-top: 0.25rem;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+}
+
+.checkItem label {
+  line-height: 1.5;
+  color: var(--color-text-main);
+}
+
+.sourceList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sourceLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  padding: 0.75rem;
+  background: var(--color-bg-light);
+  border-radius: var(--radius-md);
+  transition: background 0.2s;
+}
+
+.sourceLink:hover {
+  background: #E0E7FF;
+}
+
+/* Issues List */
+.issuesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.issueItem {
+  padding: 1rem;
+  background: #F9FAFB;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.issueHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.issueTitle {
+  font-weight: 600;
+  color: var(--dark);
+  flex: 1;
+}
+
+.severityBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.issueDescription {
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-left: 26px;
+}
+
+/* Data Grid */
+.dataGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.dataItem {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.dataItem:last-child {
+  border-bottom: none;
+}
+
+.dataLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-gray);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.dataValue {
+  font-size: 0.95rem;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+/* Preview Wrapper */
+.previewWrapper {}
+
+.pdfPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: #F3F4F6;
+  border-radius: 8px;
+  color: #94A3B8;
+}
+
+.fileSize {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .confidenceContent {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .actions {
+    width: 100%;
+  }
+  
+  .actions button {
+    flex: 1;
+  }
+  
+  .confidenceContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .confidenceBar {
+    width: 100%;
+  }
+}
