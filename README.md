@@ -9,7 +9,7 @@
 
 **AI-powered document analysis platform for immigrants. Upload documents, get instant analysis, translations, and actionable checklists.**
 
-[Live Demo](#demo) · [Features](#features) · [Installation](#installation) · [Tech Stack](#tech-stack) · [Screenshots](#screenshots)
+[Features](#-features) · [Screenshots](#-screenshots) · [Installation](#-installation) · [Tech Stack](#️-tech-stack) · [Roadmap](#️-roadmap)
 
 </div>
 
@@ -43,6 +43,30 @@
 - Bank-level AES-256 encryption
 - GDPR compliant data handling
 - No third-party data sharing
+
+---
+
+## 📸 Screenshots
+
+### Landing Page
+Modern, responsive landing page with gradient hero section, feature highlights, and social proof.
+
+![Landing Page](docs/screenshots/landing-page.png)
+
+### Dashboard
+Full-featured dashboard with document processing, real-time statistics, and quick actions.
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+### Analytics
+Interactive charts showing document processing trends, revenue growth, and user metrics with KPI cards.
+
+![Analytics](docs/screenshots/analytics.png)
+
+### Document Analysis Result
+AI-powered document analysis with extracted information, confidence scores, and actionable recommendations.
+
+![Document Result](docs/screenshots/document-result.png)
 
 ---
 
@@ -98,30 +122,20 @@ npm run preview
 ```
 src/
 ├── components/           # Reusable UI components
-│   ├── landing/         # Landing page components (Hero, Features, etc.)
-│   ├── dashboard/       # Dashboard components (Sidebar, TabBar)
+│   ├── landing/         # Hero, Features, Pricing, Footer
+│   ├── dashboard/       # Sidebar, MobileTabBar
 │   ├── admin/           # Admin panel components
-│   └── auth/            # Authentication components
+│   └── auth/            # Authentication modals
 ├── pages/               # Route pages
-│   ├── dashboard/       # Dashboard pages (Analytics, Documents, etc.)
-│   └── admin/           # Admin pages
-├── layouts/             # Layout wrappers (Dashboard, Admin, Public)
+│   ├── dashboard/       # Analytics, Documents, Settings, etc.
+│   └── admin/           # Admin management pages
+├── layouts/             # Layout wrappers
+│   ├── DashboardLayout  # User dashboard layout
+│   ├── AdminLayout      # Admin panel layout
+│   └── PublicLayout     # Public pages layout
 ├── data/                # Mock data and constants
 └── styles/              # Global styles and CSS variables
 ```
-
----
-
-## 📸 Screenshots
-
-### Landing Page
-Modern, responsive landing page with gradient hero section, feature highlights, and pricing.
-
-### Dashboard
-Full-featured dashboard with document processing, analytics, and user management.
-
-### Analytics
-Interactive charts showing document processing trends, revenue growth, and user metrics.
 
 ---
 
@@ -130,9 +144,10 @@ Interactive charts showing document processing trends, revenue growth, and user 
 - [ ] **Backend Integration** - Node.js/Express API with MongoDB
 - [ ] **Real AI Processing** - GPT-4 / Claude integration for document analysis
 - [ ] **User Authentication** - Firebase/Auth0 implementation
-- [ ] **Payment Processing** - Stripe integration
+- [ ] **Payment Processing** - Stripe integration for subscriptions
 - [ ] **Mobile App** - React Native version
-- [ ] **Multi-tenant** - B2B SaaS features
+- [ ] **Multi-tenant** - B2B SaaS features for law firms
+- [ ] **OCR Integration** - Tesseract.js for document scanning
 
 ---
 
@@ -162,6 +177,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
+
+### 💡 Made with React + Vite
 
 ⭐ **Star this repo if you find it useful!** ⭐
 
